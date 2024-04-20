@@ -9,13 +9,15 @@
     font-style: normal;
 }
 .box {
-    background-color: white;
-    width: 200px;
-    text-align: center;
+    padding-top: 15px;
+    padding-left: 25px;
 }
-body {
+body, h1, p{
     background-color: #E7E2DC;
+    margin: 0;
+    padding: 0;
 }
-.p-size {
-    font-size: 20px;
+.box-2 {
+    padding-left: 55px;
+    padding-top: 20px;
 }
