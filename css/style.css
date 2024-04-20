@@ -27,5 +27,8 @@ h1, h2, h3, p, a, div, footer {
     padding-left: 20px;
 }
 a:link {
-    background-color: none
+    color: none;
+}
+div {
+    padding-top: 20px;
 }
