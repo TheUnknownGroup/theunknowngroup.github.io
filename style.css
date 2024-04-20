@@ -13,11 +13,19 @@
     padding-left: 25px;
 }
 body, h1, p{
-    background-color: #E7E2DC;
     margin: 0;
     padding: 0;
 }
 .box-2 {
     padding-left: 55px;
     padding-top: 20px;
+}
+body {
+    background-color: #E7E2DC;
+}
+h1, h2, h3, p, a, div, footer {
+    padding-left: 20px;
+}
+a:link {
+    background-color: none
 }
