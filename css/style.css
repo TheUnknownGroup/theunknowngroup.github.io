@@ -23,7 +23,7 @@ body, h1, p{
 body {
     background-color: #E7E2DC;
 }
-h1, h2, h3, p, a, div, footer {
+h1, h2, h3, p, div, footer {
     padding-left: 20px;
 }
 a:link {
