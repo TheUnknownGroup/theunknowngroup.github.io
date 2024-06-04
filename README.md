@@ -1,6 +1,6 @@
 ## Welcome! :wave:
 
-If you'd like to go to the unfinished website and check it out to give feedback, click [here](https://theunknowngroup.github.io)
+If you'd like to go to the unfinished website and check it out to give feedback, click [here](https://theunknowngroup.github.io). (Please make sure you do `Ctrl + Left click` in order to go the website in a new tab.)
 
 This is **`the Unknown Groups`** website where there'll be a list of all respositories that are created and will soon be updated with features to make it more fun and interactive <spoiler>TBD</spoiler>!
 
