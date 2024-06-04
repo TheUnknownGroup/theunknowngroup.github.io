@@ -8,17 +8,9 @@
     font-weight: 400;
     font-style: normal;
 }
-.box {
-    padding-top: 15px;
-    padding-left: 25px;
-}
 body, h1, p{
     margin: 0;
     padding: 0;
-}
-.box-2 {
-    padding-left: 55px;
-    padding-top: 20px;
 }
 body {
     background-color: #E7E2DC;
@@ -26,9 +18,14 @@ body {
 h1, h2, h3, p, div, footer {
     padding-left: 20px;
 }
-a:link {
-    color: none;
-}
 div {
     padding-top: 20px;
+}
+.box-div {
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 4px;
+}
+.new {
+    padding-bottom: 15px;
 }
