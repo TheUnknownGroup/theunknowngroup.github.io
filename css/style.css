@@ -13,7 +13,7 @@ body, h1, p{
     padding: 0;
 }
 body {
-    background-color: #fffadf;
+    background-color: #faffea;
 }
 h1, h2, h3, p, footer {
     padding-left: 20px;
@@ -41,10 +41,16 @@ h1, h2, h3, p, footer {
     clear: both;
     display: table;
 }
-.button-style1 {
-    background-color: #fffadf;
-    color: #8a9aae;
-    border: none;
+.a-style1 {
     font-size: 35px;
     padding-left: 20px;
+}
+.i {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+.prevent-select{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
