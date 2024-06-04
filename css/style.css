@@ -15,11 +15,14 @@ body, h1, p{
 body {
     background-color: #E7E2DC;
 }
-h1, h2, h3, p, div, footer {
+h1, h2, h3, p, footer {
     padding-left: 20px;
 }
-div {
+.div {
     padding-top: 20px;
+}
+.div-2 {
+    padding-left: 20px;
 }
 .box-div {
     border-bottom-style: solid;
