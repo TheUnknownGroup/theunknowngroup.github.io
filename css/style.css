@@ -12,9 +12,6 @@ body, h1, p{
     margin: 0;
     padding: 0;
 }
-body {
-    background-color: #faffea;
-}
 h1, h2, h3, p, footer {
     padding-left: 20px;
 }
@@ -53,4 +50,19 @@ h1, h2, h3, p, footer {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+.why {
+    color: #f4f2f3
+}
+.lav {
+    color: #c0a9bd
+}
+.blu-back {
+    background-color: #94a7ae
+}
+.blu {
+    color: #94a7ae
+}
+.gre {
+    color: #64766a
 }
