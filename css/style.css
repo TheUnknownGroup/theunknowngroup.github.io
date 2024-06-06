@@ -30,17 +30,13 @@ h1, h2, h3, p, footer {
     padding-bottom: 10px;
 }
 .column {
-    float: left;
+    float: right;
     padding: 5px;
 }
 .row::after {
     content: "";
     clear: both;
     display: table;
-}
-.a-style1 {
-    font-size: 35px;
-    padding-left: 20px;
 }
 .i {
     padding-top: 10px;
@@ -65,4 +61,13 @@ h1, h2, h3, p, footer {
 }
 .gre {
     color: #64766a
+}
+.div-pad-right {
+    padding-right: 20px;
+}
+.div-fo {
+    padding-top: 7px;
+}
+.div-pad-top {
+    font-size: 28px;
 }
