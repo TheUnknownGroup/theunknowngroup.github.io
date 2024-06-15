@@ -41,7 +41,8 @@ If you want more information on them, click on the arrow below!
   - :zap: Repository 3
       <details>
         <summary> ☕ Java! </summary>
-        This is the very first repository ever made by [Devon K]() who is also the owner of [the Unknown Group]()! He made this a year or so ago to help store his python, java, javascript, c++ and html projects!
+        
+    This is the very first repository ever made by [Devon K](https://github.com/devonk15) who is also the owner of [the Unknown Group](https://github.com/TheUnknownGroup)! He made this a year or so ago to help store his python, java, javascript, c++ and html projects!
         <br><br>
 
       You can check out the repository by click [here](https://github.com/TheUnknownGroup/Java)!
