@@ -83,6 +83,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btn.style.height = '30px';
     btn.style.fontSize = '15px';
+
+    input.addEventListener('keydown', ({key}) => {
+        if (key === "Enter") {
+            document.getElementById('btn').click();
+        }
+    });
+
+    input4.addEventListener('keydown', ({key}) => {
+        if (key === "Enter") {
+            document.getElementById('btn2').click();
+        }
+    });
 });
 
 var final; 
