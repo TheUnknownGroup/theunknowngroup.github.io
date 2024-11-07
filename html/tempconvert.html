@@ -36,12 +36,18 @@
                 <label id="header">Welcome! What are we converting today?</label>
                 <br>
                 <input type="text" name="input" value="" id="input" /><br>
-                <input type="button" name="button" value="Submit" id="btn" onclick="test(this.form)">
+                <input type="button" name="button" value="Submit" id="btn" onclick="test(this.form);">
                 <p id="p"></p>
                 <p id="ask"></p>
                 <input type="text" name="input2" value="" id="input2" /><br>
-                <input type="button" name="button2" value="Submit" id="btn2"onclick="test2(this.form)">
+                <input type="button" name="button2" value="Submit" id="btn2" onclick="test2(this.form);">
                 <p id="p2"></p>
+            </form>
+            <form name="myForm2" action="" method="GET">
+                <p id="ask2"></p>
+                <input type="text" name="input3" value="" id="input3" /><br>
+                <input type="button" name="button3" value="Submit" id="btn3" onclick="document.getElementById('p3').style.visibility = 'visible'">
+                <p id="p3"></p>
             </form>
         </div>
         <br>
