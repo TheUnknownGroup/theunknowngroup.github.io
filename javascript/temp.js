@@ -1,271 +1,311 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const tem = document.getElementById('temp');
-    const new1 = document.getElementById('news');
-    const link = document.getElementById('links');
-    const type1 = document.getElementById('typel');
-    const type2 = document.getElementById('typen');
-    const type3 = document.getElementById('typet');
-    const typ = document.getElementById('typ');
+if (window.addEventListener){window.addEventListener('load', WindowLoad, false);} else if (window.attachEvent) {window.attachEvent('onload', WindowLoad);} function WindowLoad() {
+    var temp = document.getElementById('temp');
+    var news = document.getElementById('news');
+    var links = document.getElementById('links');
+    var typel = document.getElementById('typel');
+    var typen = document.getElementById('typen');
+    var typet = document.getElementById('typet');
+    var typ = document.getElementById('typ');
+    var div = document.getElementById('div');    
+    var q1 = document.getElementById('header');
+    var q2A = document.getElementById('ask');
+    var q3A = document.getElementById('ask2');
+    var input = document.getElementById('input');
+    var input2 = document.getElementById('input2');
+    var input3 = document.getElementById('input3');
+    var btn = document.getElementById('btn');
+    var btn2 = document.getElementById('btn2');
+    var btn3 = document.getElementById('btn3');
+    var para = document.getElementById('p');
+    var para2 = document.getElementById('p2');
+    var para3 = document.getElementById('p3');
 
-    if (tem) {
-        tem.setAttribute('target', '_self');
-        tem.setAttribute('class', 'zilla-slab-regular prevent-select');
-        tem.addEventListener('click', () => {
-            document.location = '../html/tempconvert';
-        });
-    }
+    q1.setAttribute('class', 'prevent-select zilla-slab-regular pad-left div-pad-top');
+    q1.style.fontSize = '24px';
+    q1.style.paddingLeft = '0px';
 
-    if (new1) {
-        new1.setAttribute('target', '_self');
-        new1.setAttribute('class', 'zilla-slab-regular prevent-select');
-        new1.addEventListener('click', () => {
-            document.location = '../html/news';
-        });
-    }
+    para.setAttribute('class', 'zilla-slab-regular');
+    para2.setAttribute('class', 'zilla-slab-regular');
+    para3.setAttribute('class', 'zilla-slab-regular');
 
-    if (link) {
-        link.setAttribute('target', '_self');
-        link.setAttribute('class', 'zilla-slab-regular prevent-select');
-        link.addEventListener('click', () => {
-            document.location = '../html/links';
-        });
-    }
+    q2A.setAttribute('class', 'zilla-slab-regular');
+    q2A.style.fontSize = '24px';
+    q2A.style.paddingLeft = '0px';
 
-    if (type1) {
-        type1.setAttribute('class', 'column div-pad-right div-pad-top div-fo');
-    }
+    q3A.setAttribute('class', 'zilla-slab-regular');
+    q3A.style.fontSize = '24px';
+    q3A.style.paddingLeft = '0px';
 
-    if (type2) {
-        type2.setAttribute('class', 'column div-pad-right div-pad-top div-fo');
-    }
-
-    if (type3) {
-        type3.setAttribute('class', 'column div-pad-right div-pad-top div-fo');
-    }
-
-    if (typ) {
-        typ.setAttribute('class', 'column div');
-        typ.style.fontSize = '20px';
-        typ.style.paddingTop = '5px';
-        typ.style.float = 'left';
-    }
-
-    const h1 = document.getElementById('header');
-    const ask = document.getElementById('ask');
-    const ask2 = document.getElementById('ask2');
-
-    ask2.style.fontSize = '24px';
-    ask2.style.paddingLeft = '0px';
-
-    ask.style.fontSize = '24px';
-    ask.style.paddingLeft = '0px';
-
-    h1.setAttribute('class', 'prevent-select zilla-slab-regular pad-left div-pad-top');
-    h1.style.fontSize = '24px';
-    h1.style.paddingLeft = '0px';
-    
-    const div = document.getElementById('div');
-    const input = document.getElementById('input');
-    const input2 = document.getElementById('input2');
-    const input3 = document.getElementById('input3');
-    const btn = document.getElementById('btn');
-    const btn2 = document.getElementById('btn2');
-    const btn3 = document.getElementById('btn3');
-
-    input3.style.visibility = 'hidden';
-    btn3.style.visibility = 'hidden';
-
-    input3.style.width = '150px';
-    input3.style.height = '24px';
-    input3.style.fontSize = '24px';
-
-    btn3.style.height = '30px';
-    btn3.style.fontSize = '15px';
-
-    input2.style.visibility = 'hidden'; 
-    btn2.style.visibility = 'hidden';
-
-    input2.style.width = '150px';
-    input2.style.height = '24px';
-    input2.style.fontSize = '24px';
+    btn.style.height = '30px';
+    btn.style.fontSize = '15px';
 
     btn2.style.height = '30px';
     btn2.style.fontSize = '15px';
+    btn2.style.visibility = 'hidden';
 
-    div.setAttribute('class', 'pad-left');
-
+    btn3.style.height = '30px';
+    btn3.style.fontSize = '15px';
+    btn3.style.visibility = 'hidden';
+    
     input.style.width = '150px';
     input.style.height = '24px';
     input.style.fontSize = '24px';
 
-    btn.style.height = '30px';
-    btn.style.fontSize = '15px';
+    input2.style.width = '150px';
+    input2.style.height = '24px';
+    input2.style.fontSize = '24px';
+    input2.style.visibility = 'hidden';
+
+    input3.style.width = '150px';
+    input3.style.height = '24px';
+    input3.style.fontSize = '24px';
+    input3.style.visibility = 'hidden';
 
     input.addEventListener('keydown', ({key}) => {
         if (key === "Enter") {
             document.getElementById('btn').click();
         }
     });
-
     input2.addEventListener('keydown', ({key}) => {
         if (key === "Enter") {
             document.getElementById('btn2').click();
         }
     });
-
     input3.addEventListener('keydown', ({key}) => {
         if (key === "Enter") {
             document.getElementById('btn3').click();
         }
     });
 
-});
-
-function test (myForm) {
-    var thingy = myForm.input.value;
-    var inp;
-    const input2 = document.getElementById('input2');
-    const btn2 = document.getElementById('btn2');
-    const input = document.getElementById('input');
-    const btn = document.getElementById('btn');
-    const p = document.getElementById('p');
-    const ask = document.getElementById('ask');
-
-    ask.setAttribute('class', 'zilla-slab-regular');
-    p.setAttribute('class', 'zilla-slab-regular');
-
-    inp = thingy.toLowerCase();
-    console.log(inp);
-    if (['celcius', 'c'].includes(inp)) {
-        console.log('Celcius it is!');
-        ask.innerText = 'Do you want to convert C to F, or C to K?';
-        btn.style.visibility = 'hidden';
-        input.style.visibility = 'hidden';
-        p.innerText = '';
-        ask.innerText = 'Do you want to convert C to F, or C to K?';
-        input2.style.visibility = 'visible';
-        btn2.style.visibility = 'visible';
-    } else if (['fahrenheit', 'f'].includes(inp)) {
-        console.log('Fahrenheit it is!');
-        btn.style.visibility = 'hidden';
-        input.style.visibility = 'hidden';
-        p.innerText = '';
-        ask.innerText = 'Do you want to convert F to C, or F to K?';
-        input2.style.visibility = 'visible';
-        btn2.style.visibility = 'visible';
-    } else if (['kelvin', 'k'].includes(inp)) {
-        console.log('Kelvin it is!');
-        btn.style.visibility = 'hidden';
-        input.style.visibility = 'hidden';
-        p.innerText = '';
-        ask.innerText = 'Do you want to convert K to F, or K to C?';
-        input2.style.visibility = 'visible';
-        btn2.style.visibility = 'visible';
-    } else {
-        p.innerText = 'Invalid input. Please enter Kelvin, Fahrenheit, or Celsius.';
-    };
-    myForm.input.value = ""
-}
-
-function test2 (myForm) {
-    var inp2;
-    var thingy2 = myForm.input2.value;
-    const input2 = document.getElementById('input2');
-    const btn2 = document.getElementById('btn2');
-    const p2 = document.getElementById('p2');
-    const ask = document.getElementById('ask');
-    const ask2 = document.getElementById('ask2');
-
-    p2.setAttribute('class', 'zilla-slab-regular');
-
-    inp2 = thingy2.toLowerCase();
-    console.log(inp2);
-    if (inp2 == 'cf') {
-        p2.innerText = '';
-        input2.style.visibility = 'hidden';
-        btn2.style.visibility = 'hidden';
-        ask.innerText = '';
-        ask2.innerText = 'Please input a degree you would like to convert:';
-        convCtoF(myForm2);
-    } else if (inp2 == 'ck') {
-        p2.innerText = '';
-        input2.style.visibility = 'hidden';
-        btn2.style.visibility = 'hidden';
-        ask.innerText = '';
-        ask2.innerText = 'Please input a degree you would like to convert:';
-        convCtoF(myForm2);
-    } else if (inp2 == 'fc') {
-        p2.innerText = '';
-        input2.style.visibility = 'hidden';
-        btn2.style.visibility = 'hidden';
-        ask.innerText = '';
-        ask2.innerText = 'Please input a degree you would like to convert:';
-        convCtoF(myForm2);
-    } else if (inp2 == 'fk') {
-        p2.innerText = '';
-        input2.style.visibility = 'hidden';
-        btn2.style.visibility = 'hidden';
-        ask.innerText = '';
-        ask2.innerText = 'Please input a degree you would like to convert:'; 
-        convCtoF(myForm2);
-    } else if (inp2 == 'kf') {
-        p2.innerText = '';
-        input2.style.visibility = 'hidden';
-        btn2.style.visibility = 'hidden';
-        ask.innerText = '';
-        ask2.innerText = 'Please input a degree you would like to convert:';
-        convCtoF(myForm2);
-    } else if (inp2 == 'kc') {
-        p2.innerText = '';
-        input2.style.visibility = 'hidden';
-        btn2.style.visibility = 'hidden';
-        ask.innerText = '';
-        ask2.innerText = 'Please input a degree you would like to convert:';
-        convCtoF(myForm2);
-    } else {
-        p2.innerText = 'Invalid input.'
-    }
-    myForm.input2.value = ""
-}
-
-function convCtoF (myForm2) {
-    // convert formula for C to F: (deg * 1.8) + 32
-    var thingy3 = myForm2.input3.value;
-    var temp = document.getElementById('input3').value;
-    console.log(temp);
-    const input3 = document.getElementById('input3');
-    const btn3 = document.getElementById('btn3');
-    const ask2 = document.getElementById('ask2');
-    const p3 = document.getElementById('p3');
-
-    ask2.setAttribute('class', 'zilla-slab-regular');
-    p3.style.visibility = 'hidden'
-
-    input3.style.visibility = 'visible';
-    btn3.style.visibility = 'visible';
     
-    let deg = parseFloat(thingy3);
-    let v = (deg * 1.8) + 32;
-    let vFin = Math.round(v)
-    p3.innerText = 'The fahrenheit degree is: ' + vFin;
+    temp.setAttribute('target', '_self');
+    temp.setAttribute('class', 'zilla-slab-regular prevent-select');
+
+    news.setAttribute('target', '_self');
+    news.setAttribute('class', 'zilla-slab-regular prevent-select');
+
+    links.setAttribute('target', '_self');
+    links.setAttribute('class', 'zilla-slab-regular prevent-select');
+
+    // Div Links
+    typel.setAttribute('class', 'column div-pad-right div-pad-top div-fo');
+    // Div News
+    typen.setAttribute('class', 'column div-pad-right div-pad-top div-fo');
+    // Div Temp
+    typet.setAttribute('class', 'column div-pad-right div-pad-top div-fo');
+    // Typ for the main link
+    typ.setAttribute('class', 'column div');
+    typ.style.fontSize = '20px';
+    typ.style.paddingTop = '5px';
+    typ.style.float = 'left';
+
+    temp.addEventListener('click', () => {
+        document.location = '../html/tempconvert'
+    });
+    news.addEventListener('click', () => {
+        document.location = '../html/news'
+    });
+    links.addEventListener('click', () => {
+        document.location = '../html/links'
+    });
+    
+    div.setAttribute('class', 'pad-left')
+
+    btn.addEventListener('click', () => {
+        start(myForm)
+    });
+    btn2.addEventListener('click', () => {
+        q2(myForm)
+    });
+};
+
+var q1 = document.getElementById('header');
+var q2A = document.getElementById('ask');
+var q3A = document.getElementById('ask2');
+var input = document.getElementById('input');
+var input2 = document.getElementById('input2');
+var input3 = document.getElementById('input3');
+var btn = document.getElementById('btn');
+var btn2 = document.getElementById('btn2');
+var btn3 = document.getElementById('btn3');
+var para = document.getElementById('p');
+var para2 = document.getElementById('p2');
+var para3 = document.getElementById('p3');
+
+function start(myForm) {
+    var para = document.getElementById('p');
+    var q1 = document.getElementById('header');
+    var q2 = document.getElementById('ask');
+    var input = document.getElementById('input');
+    var input2 = document.getElementById('input2');
+    var btn = document.getElementById('btn');
+    var btn2 = document.getElementById('btn2');
+    var inp = myForm.input.value;
+    copyInp = inp.toLowerCase();
+    console.log(copyInp);
+
+    if (['celcius', 'c'].includes(copyInp)) {
+        para.innerText = '';
+        q1.style.visibility = 'hidden';
+        input.style.visibility = 'hidden';
+        btn.style.visibility = 'hidden';
+        input2.style.visibility = 'visible';
+        btn2.style.visibility = 'visible';
+        q2.innerText = 'Do you want to convert C to F, or C to K?';
+    } else if (['fahrenheit', 'f'].includes(copyInp)) {
+        para.innerText = '';
+        q1.style.visibility = 'hidden';
+        input.style.visibility = 'hidden';
+        btn.style.visibility = 'hidden';
+        input2.style.visibility = 'visible';
+        btn2.style.visibility = 'visible';
+        q2.innerText = 'Do you want to convert F to C, or F to K?';
+    } else if (['kelvin', 'k'].includes(copyInp)) {
+        para.innerText = '';
+        q1.style.visibility = 'hidden';
+        input.style.visibility = 'hidden';
+        btn.style.visibility = 'hidden';
+        input2.style.visibility = 'visible';
+        btn2.style.visibility = 'visible';
+        q2.innerText = 'Do you want to convert K to C, or K to F?';
+    } else {
+        para.innerText = 'Invalid input. Please enter Kelvin, Fahrenheit, or Celcius.';
+    }
+
+    myForm.input.value = "";
 }
 
-function convCtoK (myForm) {
+function q2(myForm) {
+    var q2A = document.getElementById('ask');
+    var q3A = document.getElementById('ask2');
+    var input2 = document.getElementById('input2');
+    var input3 = document.getElementById('input3');
+    var btn2 = document.getElementById('btn2');
+    var btn3 = document.getElementById('btn3');
+    var para2 = document.getElementById('p2');
+    var inp = myForm.input2.value;
+    copyInp = inp.toLowerCase();
+    console.log(copyInp);
 
+    if (copyInp == 'cf') {
+        para2.innerText = '';
+        q2A.innerText = '';
+        q3A.innerText = 'Please input the degree number you would like to convert:';
+        btn2.style.visibility = 'hidden';
+        input2.style.visibility = 'hidden';
+        input3.style.visibility = 'visible';
+        btn3.style.visibility = 'visible';
+        console.log('Converting C to F')
+        convCtoF(myForm);
+    } else if (copyInp == 'ck') {
+        para2.innerText = '';
+        q2A.innerText = '';
+        q3A.innerText = 'Please input the degree number you would like to convert:';
+        btn2.style.visibility = 'hidden';
+        input2.style.visibility = 'hidden';
+        input3.style.visibility = 'visible';
+        btn3.style.visibility = 'visible';
+        console.log('Converting C to K')
+        convCtoK(myForm);
+    } else if (copyInp == 'fc') {
+        para2.innerText = '';
+        q2A.innerText = '';
+        q3A.innerText = 'Please input the degree number you would like to convert:';
+        btn2.style.visibility = 'hidden';
+        input2.style.visibility = 'hidden';
+        input3.style.visibility = 'visible';
+        btn3.style.visibility = 'visible';
+        console.log('Converting F to C')
+        convFtoC(myForm);
+    } else if (copyInp == 'fk') {
+        para2.innerText = '';
+        q2A.innerText = '';
+        q3A.innerText = 'Please input the degree number you would like to convert:';
+        btn2.style.visibility = 'hidden';
+        input2.style.visibility = 'hidden';
+        input3.style.visibility = 'visible';
+        btn3.style.visibility = 'visible';
+        console.log('Converting F to K')
+        convFtoK(myForm);
+    } else if (copyInp == 'kc') {
+        para2.innerText = '';
+        q2A.innerText = '';
+        q3A.innerText = 'Please input the degree number you would like to convert:';
+        btn2.style.visibility = 'hidden';
+        input2.style.visibility = 'hidden';
+        input3.style.visibility = 'visible';
+        btn3.style.visibility = 'visible';
+        console.log('Converting K to C')
+        convKtoC(myForm);
+    } else if (copyInp == 'kf') {
+        para2.innerText = '';
+        q2A.innerText = '';
+        q3A.innerText = 'Please input the degree number you would like to convert:';
+        btn2.style.visibility = 'hidden';
+        input2.style.visibility = 'hidden';
+        input3.style.visibility = 'visible';
+        btn3.style.visibility = 'visible';
+        console.log('Converting K to F')
+        convKtoF(myForm);
+    } else {
+        para2.innerText = 'Invalid input. Please put something similar to the following: CF, CK, FC, FK';
+    }
+
+    myForm.input2.value = "";
 }
 
-function convFtoC (myForm) {
+function convCtoF(myForm) {
+    // convert formula for C to F: (deg * 1.8) + 32
+    var btn3 = document.getElementById('btn3');
+    var inp = myForm.input3.value;
+    
+    btn3.addEventListener('click', () => {
+        var deg = inp * 1;
+        var v = (deg * 1.8) + 32;
+        var vFin = Math.round(v);
+    
+        console.log(vFin);
+    });
 
+    myForm.input3.value = "";
 }
-
-function convFtoK (myForm) {
-
+function convCtoK(myForm) {
+    // convert formula for C to K: deg + 273.15
+    var btn3 = document.getElementById('btn3');
+    var inp = myForm.input3.value;
+    console.log(inp);
+    
+    myForm.input3.value = "";
 }
-
-function convKtoF (myForm) {
-
+function convFtoC(myForm) {
+    // convert formula for F to C: (deg - 32) / 1.8
+    var btn3 = document.getElementById('btn3');
+    var inp = myForm.input3.value;
+    console.log(inp);
+    
+    myForm.input3.value = "";
 }
-
-function convKtoC (myForm) {
-
+function convFtoK(myForm) {
+    // convert formula for F to K: (deg - 32) * 5/9 + 273.15
+    var btn3 = document.getElementById('btn3');
+    var inp = myForm.input3.value;
+    console.log(inp);
+    
+    myForm.input3.value = "";
+}
+function convKtoC(myForm) {
+    // convert formula for K to F: (deg - 273.15) * 9/5 + 32
+    var btn3 = document.getElementById('btn3');
+    var inp = myForm.input3.value;
+    console.log(inp);
+    
+    myForm.input3.value = "";
+}
+function convKtoF(myForm) {
+    // convert formula for K to C: deg - 273.15
+    var btn3 = document.getElementById('btn3');
+    var inp = myForm.input3.value;
+    console.log(inp);
+    
+    myForm.input3.value = "";
 }
