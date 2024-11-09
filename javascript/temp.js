@@ -28,6 +28,9 @@ if (window.addEventListener){window.addEventListener('load', WindowLoad, false);
     para2.setAttribute('class', 'zilla-slab-regular');
     para3.setAttribute('class', 'zilla-slab-regular');
 
+    para3.style.fontSize = '20px';
+    para3.style.fontWeight = 'bold';
+
     q2A.setAttribute('class', 'zilla-slab-regular');
     q2A.style.fontSize = '24px';
     q2A.style.paddingLeft = '0px';
@@ -256,56 +259,115 @@ function q2(myForm) {
 
 function convCtoF(myForm) {
     // convert formula for C to F: (deg * 1.8) + 32
-    var btn3 = document.getElementById('btn3');
     var inp = myForm.input3.value;
-    
-    btn3.addEventListener('click', () => {
-        var deg = inp * 1;
+    var deg = parseFloat(inp);
+    var btn3 = document.getElementById('btn3');
+    var para3 = document.getElementById('p3');
+
+    if (!isNaN(deg)) {
         var v = (deg * 1.8) + 32;
         var vFin = Math.round(v);
-    
-        console.log(vFin);
-    });
-
+        para3.style.visibility = 'visible';
+        para3.innerText = 'The tempurature from Celcius to Fahrenheit is: ' + vFin;
+    } else {
+        btn3.addEventListener('click', () => {
+            convCtoF(myForm)
+        });
+    }
     myForm.input3.value = "";
 }
 function convCtoK(myForm) {
     // convert formula for C to K: deg + 273.15
-    var btn3 = document.getElementById('btn3');
     var inp = myForm.input3.value;
-    console.log(inp);
-    
+    var deg = parseFloat(inp);
+    var btn3 = document.getElementById('btn3');
+    var para3 = document.getElementById('p3');
+
+    if (!isNaN(deg)) {
+        var v = deg + 273.15;
+        var vFin = Math.round(v);
+        para3.style.visibility = 'visible';
+        para3.innerText = 'The tempurature from Celcius to Kelvin is: ' + vFin;
+    } else {
+        btn3.addEventListener('click', () => {
+            convCtoK(myForm)
+        });
+    }
     myForm.input3.value = "";
 }
 function convFtoC(myForm) {
     // convert formula for F to C: (deg - 32) / 1.8
-    var btn3 = document.getElementById('btn3');
     var inp = myForm.input3.value;
-    console.log(inp);
-    
+    var deg = parseFloat(inp);
+    var btn3 = document.getElementById('btn3');
+    var para3 = document.getElementById('p3');
+
+    if (!isNaN(deg)) {
+        var v = (deg - 32) / 1.8;
+        var vFin = Math.round(v);
+        para3.style.visibility = 'visible';
+        para3.innerText = 'The tempurature from Fahrenheit to Celcius is: ' + vFin;
+    } else {
+        btn3.addEventListener('click', () => {
+            convFtoC(myForm)
+        });
+    }
     myForm.input3.value = "";
 }
 function convFtoK(myForm) {
     // convert formula for F to K: (deg - 32) * 5/9 + 273.15
-    var btn3 = document.getElementById('btn3');
     var inp = myForm.input3.value;
-    console.log(inp);
-    
+    var deg = parseFloat(inp);
+    var btn3 = document.getElementById('btn3');
+    var para3 = document.getElementById('p3');
+
+    if (!isNaN(deg)) {
+        var v = (deg - 32) * 5/9 + 273.15;
+        var vFin = Math.round(v);
+        para3.style.visibility = 'visible';
+        para3.innerText = 'The tempurature from Fahrenheit to Kelvin is: ' + vFin;
+    } else {
+        btn3.addEventListener('click', () => {
+            convFtoK(myForm)
+        });
+    }
     myForm.input3.value = "";
 }
 function convKtoC(myForm) {
-    // convert formula for K to F: (deg - 273.15) * 9/5 + 32
-    var btn3 = document.getElementById('btn3');
+    // convert formula for K to C: deg - 273.15 
     var inp = myForm.input3.value;
-    console.log(inp);
-    
+    var deg = parseFloat(inp);
+    var btn3 = document.getElementById('btn3');
+    var para3 = document.getElementById('p3');
+
+    if (!isNaN(deg)) {
+        var v = deg - 273.15;
+        var vFin = Math.round(v);
+        para3.style.visibility = 'visible';
+        para3.innerText = 'The tempurature from Kelvin to Celcius is: ' + vFin;
+    } else {
+        btn3.addEventListener('click', () => {
+            convKtoC(myForm)
+        });
+    }
     myForm.input3.value = "";
 }
 function convKtoF(myForm) {
-    // convert formula for K to C: deg - 273.15
-    var btn3 = document.getElementById('btn3');
+    // convert formula for K to F: (deg - 273.15) * 9/5 + 32
     var inp = myForm.input3.value;
-    console.log(inp);
-    
+    var deg = parseFloat(inp);
+    var btn3 = document.getElementById('btn3');
+    var para3 = document.getElementById('p3');
+
+    if (!isNaN(deg)) {
+        var v = (deg - 273.15) * 9/5 + 32;
+        var vFin = Math.round(v);
+        para3.style.visibility = 'visible';
+        para3.innerText = 'The tempurature from Kelvin to Fahrenheit is: ' + vFin;
+    } else {
+        btn3.addEventListener('click', () => {
+            convKtoF(myForm)
+        });
+    }
     myForm.input3.value = "";
 }
