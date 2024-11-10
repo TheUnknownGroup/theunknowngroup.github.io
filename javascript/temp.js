@@ -5,7 +5,7 @@ if (window.addEventListener){window.addEventListener('load', WindowLoad, false);
     var typel = document.getElementById('typel');
     var typen = document.getElementById('typen');
     var typet = document.getElementById('typet');
-    var typ = document.getElementById('typ');
+    var typ = document.getElementById('typ2');
     var div = document.getElementById('div');    
     var q1 = document.getElementById('header');
     var q2A = document.getElementById('ask');
@@ -21,48 +21,14 @@ if (window.addEventListener){window.addEventListener('load', WindowLoad, false);
     var para3 = document.getElementById('p3');
 
     q1.setAttribute('class', 'prevent-select zilla-slab-regular pad-left div-pad-top');
-    q1.style.fontSize = '24px';
-    q1.style.paddingLeft = '0px';
 
     para.setAttribute('class', 'zilla-slab-regular');
     para2.setAttribute('class', 'zilla-slab-regular');
     para3.setAttribute('class', 'zilla-slab-regular');
 
-    para3.style.fontSize = '20px';
-    para3.style.fontWeight = 'bold';
-
     q2A.setAttribute('class', 'zilla-slab-regular');
-    q2A.style.fontSize = '24px';
-    q2A.style.paddingLeft = '0px';
 
     q3A.setAttribute('class', 'zilla-slab-regular');
-    q3A.style.fontSize = '24px';
-    q3A.style.paddingLeft = '0px';
-
-    btn.style.height = '30px';
-    btn.style.fontSize = '15px';
-
-    btn2.style.height = '30px';
-    btn2.style.fontSize = '15px';
-    btn2.style.visibility = 'hidden';
-
-    btn3.style.height = '30px';
-    btn3.style.fontSize = '15px';
-    btn3.style.visibility = 'hidden';
-    
-    input.style.width = '150px';
-    input.style.height = '24px';
-    input.style.fontSize = '24px';
-
-    input2.style.width = '150px';
-    input2.style.height = '24px';
-    input2.style.fontSize = '24px';
-    input2.style.visibility = 'hidden';
-
-    input3.style.width = '150px';
-    input3.style.height = '24px';
-    input3.style.fontSize = '24px';
-    input3.style.visibility = 'hidden';
 
     input.addEventListener('keydown', ({key}) => {
         if (key === "Enter") {
@@ -98,9 +64,6 @@ if (window.addEventListener){window.addEventListener('load', WindowLoad, false);
     typet.setAttribute('class', 'column div-pad-right div-pad-top div-fo');
     // Typ for the main link
     typ.setAttribute('class', 'column div');
-    typ.style.fontSize = '20px';
-    typ.style.paddingTop = '5px';
-    typ.style.float = 'left';
 
     temp.addEventListener('click', () => {
         document.location = '../html/tempconvert'
@@ -121,19 +84,6 @@ if (window.addEventListener){window.addEventListener('load', WindowLoad, false);
         q2(myForm)
     });
 };
-
-// var q1 = document.getElementById('header');
-// var q2A = document.getElementById('ask');
-// var q3A = document.getElementById('ask2');
-// var input = document.getElementById('input');
-// var input2 = document.getElementById('input2');
-// var input3 = document.getElementById('input3');
-// var btn = document.getElementById('btn');
-// var btn2 = document.getElementById('btn2');
-// var btn3 = document.getElementById('btn3');
-// var para = document.getElementById('p');
-// var para2 = document.getElementById('p2');
-// var para3 = document.getElementById('p3');
 
 function start(myForm) {
     var para = document.getElementById('p');

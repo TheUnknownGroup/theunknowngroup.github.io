@@ -45,8 +45,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (typ) {
         typ.setAttribute('class', 'column div');
-        typ.style.fontSize = '20px';
-        typ.style.paddingTop = '5px';
-        typ.style.float = 'left';
     }
 });
