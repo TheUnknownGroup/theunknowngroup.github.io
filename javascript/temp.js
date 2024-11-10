@@ -122,18 +122,18 @@ if (window.addEventListener){window.addEventListener('load', WindowLoad, false);
     });
 };
 
-var q1 = document.getElementById('header');
-var q2A = document.getElementById('ask');
-var q3A = document.getElementById('ask2');
-var input = document.getElementById('input');
-var input2 = document.getElementById('input2');
-var input3 = document.getElementById('input3');
-var btn = document.getElementById('btn');
-var btn2 = document.getElementById('btn2');
-var btn3 = document.getElementById('btn3');
-var para = document.getElementById('p');
-var para2 = document.getElementById('p2');
-var para3 = document.getElementById('p3');
+// var q1 = document.getElementById('header');
+// var q2A = document.getElementById('ask');
+// var q3A = document.getElementById('ask2');
+// var input = document.getElementById('input');
+// var input2 = document.getElementById('input2');
+// var input3 = document.getElementById('input3');
+// var btn = document.getElementById('btn');
+// var btn2 = document.getElementById('btn2');
+// var btn3 = document.getElementById('btn3');
+// var para = document.getElementById('p');
+// var para2 = document.getElementById('p2');
+// var para3 = document.getElementById('p3');
 
 function start(myForm) {
     var para = document.getElementById('p');
@@ -147,7 +147,7 @@ function start(myForm) {
     copyInp = inp.toLowerCase();
     console.log(copyInp);
 
-    if (['celcius', 'c'].includes(copyInp)) {
+    if (['celsius', 'c'].includes(copyInp)) {
         para.innerText = '';
         q1.style.visibility = 'hidden';
         input.style.visibility = 'hidden';
@@ -268,7 +268,7 @@ function convCtoF(myForm) {
         var v = (deg * 1.8) + 32;
         var vFin = Math.round(v);
         para3.style.visibility = 'visible';
-        para3.innerText = 'The tempurature from Celcius to Fahrenheit is: ' + vFin;
+        para3.innerText = 'The tempurature from Celsius to Fahrenheit is: ' + vFin;
     } else {
         btn3.addEventListener('click', () => {
             convCtoF(myForm)
@@ -287,7 +287,7 @@ function convCtoK(myForm) {
         var v = deg + 273.15;
         var vFin = Math.round(v);
         para3.style.visibility = 'visible';
-        para3.innerText = 'The tempurature from Celcius to Kelvin is: ' + vFin;
+        para3.innerText = 'The tempurature from Celsius to Kelvin is: ' + vFin;
     } else {
         btn3.addEventListener('click', () => {
             convCtoK(myForm)
@@ -306,7 +306,7 @@ function convFtoC(myForm) {
         var v = (deg - 32) / 1.8;
         var vFin = Math.round(v);
         para3.style.visibility = 'visible';
-        para3.innerText = 'The tempurature from Fahrenheit to Celcius is: ' + vFin;
+        para3.innerText = 'The tempurature from Fahrenheit to Celsius is: ' + vFin;
     } else {
         btn3.addEventListener('click', () => {
             convFtoC(myForm)
@@ -344,7 +344,7 @@ function convKtoC(myForm) {
         var v = deg - 273.15;
         var vFin = Math.round(v);
         para3.style.visibility = 'visible';
-        para3.innerText = 'The tempurature from Kelvin to Celcius is: ' + vFin;
+        para3.innerText = 'The tempurature from Kelvin to Celsius is: ' + vFin;
     } else {
         btn3.addEventListener('click', () => {
             convKtoC(myForm)
