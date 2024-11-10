@@ -15,7 +15,6 @@ if (window.addEventListener){window.addEventListener('load', WindowLoad, false);
     var input3 = document.getElementById('input3');
     var btn = document.getElementById('btn');
     var btn2 = document.getElementById('btn2');
-    var btn3 = document.getElementById('btn3');
     var para = document.getElementById('p');
     var para2 = document.getElementById('p2');
     var para3 = document.getElementById('p3');
