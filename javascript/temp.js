@@ -172,7 +172,7 @@ function start(myForm) {
         btn2.style.visibility = 'visible';
         q2.innerText = 'Do you want to convert K to C, or K to F?';
     } else {
-        para.innerText = 'Invalid input. Please enter Kelvin, Fahrenheit, or Celcius.';
+        para.innerText = 'Invalid input. Please enter Kelvin, Fahrenheit, or Celsius.';
     }
 
     myForm.input.value = "";
