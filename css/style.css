@@ -12,6 +12,10 @@ body, h1, p{
     margin: 0;
     padding: 0;
 }
+body {
+    height: 100vh;
+    background: no-repeat linear-gradient(210deg, rgba(100, 118, 106, 1) 35%, rgba(148, 167, 174, 1) 50%)
+}
 .pad-left {
     padding-left: 20px;
 }
@@ -47,20 +51,29 @@ body, h1, p{
     -ms-user-select: none;
     user-select: none;
 }
+.why-back {
+    background-color: #f4f2f3;
+}
 .why {
-    color: #f4f2f3
+    color: #f4f2f3;
+}
+.lav-back {
+    background-color: #c0a9bd;
 }
 .lav {
-    color: #c0a9bd
+    color: #c0a9bd;
 }
 .blu-back {
-    background-color: #94a7ae
+    background-color: #94a7ae;
 }
 .blu {
-    color: #94a7ae
+    color: #94a7ae;
+}
+.gre-back {
+    background-color: #64766a;
 }
 .gre {
-    color: #64766a
+    color: #64766a;
 }
 .div-pad-right {
     padding-right: 20px;
@@ -71,11 +84,12 @@ body, h1, p{
 .div-fo {
     font-size: 28px;
 }
+
 #typ {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
     padding-top: 5px;
     padding-bottom: 7px;
 }
@@ -111,4 +125,8 @@ body, h1, p{
     height: 24px;
     font-size: 24px;
     visibility: hidden;
+}
+#h1 {
+    padding-left: 10px;
+    font-size: 24px;
 }
