@@ -1,0 +1,53 @@
+.lexend-reg {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #0e111e;
+    padding: 0;
+    margin: 0;
+    color: #e8edfc;
+}
+
+.icon {
+    padding: 1.5vh 0 1.25vh 2.5vh;
+}
+
+#icon:hover {
+    box-shadow: 1px 1px 15px #e8edfc;
+}
+
+.column {
+    float: left;
+}
+
+.header::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
+    border-bottom: 0.015vh solid #e8edfc;
+}
+
+#home {
+    cursor: pointer;
+    text-decoration: none;
+    transition: text-decoration 3s ease;
+    color: #e8edfc;
+}
+
+#home:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+.home {
+    padding-top: 1em;
+    padding-left: 1.25em;
+    font-size: 20px;
+}
