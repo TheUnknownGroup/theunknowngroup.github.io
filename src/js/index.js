@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         tem.setAttribute('target', '_self');
         tem.setAttribute('class', 'zilla-slab-regular prevent-select');
         tem.addEventListener('click', () => {
-            document.location = '../navbar/tempconvert';
+            document.location = '../../navbar/tempconvert';
         });
     }
     
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         new1.setAttribute('target', '_self');
         new1.setAttribute('class', 'zilla-slab-regular prevent-select');
         new1.addEventListener('click', () => {
-            document.location = '../navbar/news';
+            document.location = '../../navbar/news';
         });
     }
     
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         link.setAttribute('target', '_self');
         link.setAttribute('class', 'zilla-slab-regular prevent-select');
         link.addEventListener('click', () => {
-            document.location = '../navbar/links';
+            document.location = '../../navbar/links';
         });
     }
     
