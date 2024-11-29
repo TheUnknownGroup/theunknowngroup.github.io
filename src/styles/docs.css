@@ -34,20 +34,21 @@ body {
     border-bottom: 0.015vh solid #e8edfc;
 }
 
-#home {
+#home, #guide {
     cursor: pointer;
     text-decoration: none;
     transition: text-decoration 3s ease;
     color: #e8edfc;
 }
 
-#home:hover {
+#home:hover, #guide:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
 
-.home {
+.home, .guide {
     padding-top: 1em;
     padding-left: 1.25em;
     font-size: 20px;
+    transform: translateY()
 }

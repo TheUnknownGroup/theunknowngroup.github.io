@@ -65,13 +65,13 @@ if (window.addEventListener){window.addEventListener('load', WindowLoad, false);
     typ.setAttribute('class', 'column div');
 
     temp.addEventListener('click', () => {
-        document.location = '../html/tempconvert'
+        document.location = '../navbar/tempconvert'
     });
     news.addEventListener('click', () => {
-        document.location = '../html/news'
+        document.location = '../navbar/news'
     });
     links.addEventListener('click', () => {
-        document.location = '../html/links'
+        document.location = '../navbar/links'
     });
     
     div.setAttribute('class', 'pad-left')
