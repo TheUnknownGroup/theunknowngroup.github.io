@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .lexend-reg {
     font-family: "Lexend", serif;
     font-optical-sizing: auto;
@@ -51,4 +55,38 @@ body {
     padding-left: 1.25em;
     font-size: 20px;
     transform: translateY()
+}
+
+#wel {
+    text-align: center;
+    padding-top: 30vh;
+    font-size: 50px;
+    padding-bottom: 10vh;
+}
+
+#contain1 {
+    display: flex;
+    justify-content: center;
+}
+
+#inside1 {
+    padding: 1.5vw;
+    border: 1px solid #06080e;
+    border-radius: 17px;
+    width: 50vw;
+    box-shadow: 1px 1px 10px rgb(6, 8, 14);
+}
+
+#subWel {
+    font-size: 20px;
+    color: rgba(232, 237, 252, 75%);
+}
+
+#main {
+    cursor: pointer;
+}
+
+#main:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
