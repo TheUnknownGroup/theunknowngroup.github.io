@@ -45,8 +45,8 @@ If you want more information on them, click on the arrow below!
     This is the very first repository ever made by [Devon K](https://github.com/devonk15) who is also the owner of [the Unknown Group](https://github.com/TheUnknownGroup)! He made this a year or so ago to help store his python, java, javascript, c++ and html projects!
         <br><br>
 
-      You can check out the repository by click [here](https://github.com/TheUnknownGroup/Java)!
+      You can check out the repository by clicking [here](https://github.com/TheUnknownGroup/Java)!
       </details> 
-    Thats all of them currently, there might be more in the future, but that is yet to be discovered!
+    Thats all of them currently, there might be more in the future, but that has yet to be discovered!
   </details>
 </details>
