@@ -1,3 +1,29 @@
+/* :root {
+    --text: #eeecf2;
+    --background: #1c1b1f;
+    --primary: #a691e2;
+    --secondary: #331297;
+    --accent: #531bfd;
+} 
+
+:root[data-theme="light"] {
+  --text: #0e0c12;
+  --background: #e2e1e5;
+  --primary: #321d6d;
+  --secondary: #8a68ed;
+  --accent: #3b02e3;
+}
+
+:root[data-theme="dark"] {
+  --text: #eeecf2;
+  --background: #1c1b1f;
+  --primary: #a691e2;
+  --secondary: #331297;
+  --accent: #531bfd;
+}
+
+*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -10,18 +36,19 @@ html {
 }
 
 body {
-    background-color: #0e111e;
+    background-color: #1c1b1f;
     padding: 0;
     margin: 0;
-    color: #e8edfc;
+    color: #e7e4ee;
+    height: 400vh;
 }
 
 .icon {
-    padding: 1.5vh 0 1.25vh 2.5vh;
+    padding: 1.5vh 0 1.25vh 1.75vh;
 }
 
 #icon:hover {
-    box-shadow: 1px 1px 15px #e8edfc;
+    box-shadow: 1px 1px 15px #e7e4ee;
 }
 
 .column {
@@ -42,7 +69,7 @@ body {
     cursor: pointer;
     text-decoration: none;
     transition: text-decoration 3s ease;
-    color: #e8edfc;
+    color: #e7e4ee;
 }
 
 #home:hover, #guide:hover {
@@ -71,15 +98,15 @@ body {
 
 #inside1 {
     padding: 1.5vw;
-    border: 1px solid #06080e;
-    border-radius: 17px;
+    border: 1px solid #0d0d0f;
+    border-radius: 27px;
     width: 50vw;
-    box-shadow: 1px 1px 10px rgb(6, 8, 14);
+    box-shadow: 1px 1px 10px rgba(13, 13, 15, 80%);
 }
 
 #subWel {
     font-size: 20px;
-    color: rgba(232, 237, 252, 75%);
+    color: rgba(231, 228, 238, 75%);
 }
 
 #main {
@@ -89,4 +116,10 @@ body {
 #main:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
+}
+
+#up {
+    padding-top: 70px;
+    float: right;
+    position: fixed;
 }

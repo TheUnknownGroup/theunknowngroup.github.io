@@ -13,14 +13,14 @@ import "../docs.css";
         <title>Documentation</title>
     </head>
     <body>
-        <div class="header">
+        <div class="header" id="header">
             <div class="icon column">
                 <a href="https://github.com/TheUnknownGroup" target="_blank" id="github">
                     <img src="../assets/favicon.png" alt="TheUnknownGroup's Icon" width="40" id="icon"/>
                 </a>
             </div>
             <div class="column home">
-                <a class="lexend-reg" id="home">Home</a>
+                <a onclick="location.reload()" class="lexend-reg" id="home">Home</a>
             </div>
             <div class="column guide">
                 <a href="docs/guides" class="lexend-reg" id="guide">Guides</a>
@@ -34,6 +34,11 @@ import "../docs.css";
                     This is the documentation part the TheUnknownGroup's Website. You can find the main website <a id="main" onclick="window.open('https:\\\\theunknowngroup.github.io', '_blank')">here.</a>
                 </p>
             </div>
+        </div>
+        <div id="up">
+            <a href="#header">
+                <img src="../upbutton.svg" height="60" width="60">
+            </a>
         </div>
         <script src="/src/js/docs.js"></script>
     </body>
