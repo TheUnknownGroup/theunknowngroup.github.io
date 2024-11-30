@@ -122,6 +122,7 @@ body {
     position: fixed;
     z-index: 0;
     right: 15px;
+    cursor: pointer;
 }
 
 .head {
