@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 let sc = document.getElementById("scroll");
 let up = document.getElementById("up");
+let bo = document.getElementById("bot");
 
 up.addEventListener("click", (event) => {
     location.href='#h';
@@ -14,6 +15,13 @@ up.addEventListener("click", (event) => {
 })
 
 sc.addEventListener("click", (event) => {
+    location.href = '#example';
+
+    event.preventDefault()
+    history.pushState(null, "", "/docs")
+})
+
+bo.addEventListener("click", (event) => {
     location.href = '#example';
 
     event.preventDefault()
