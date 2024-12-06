@@ -93,6 +93,7 @@ function start(myForm) {
     var btn = document.getElementById('btn');
     var btn2 = document.getElementById('btn2');
     var inp = myForm.input.value;
+    var copyInp;
     copyInp = inp.toLowerCase();
     console.log(copyInp);
 
@@ -136,6 +137,7 @@ function q2(myForm) {
     var btn3 = document.getElementById('btn3');
     var para2 = document.getElementById('p2');
     var inp = myForm.input2.value;
+    var copyInp;
     copyInp = inp.toLowerCase();
     console.log(copyInp);
 
