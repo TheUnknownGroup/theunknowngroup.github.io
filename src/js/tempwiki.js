@@ -1,5 +1,0 @@
-document.addEventListener("DOMContentLoaded", () => {
-    var h1 = document.getElementById('h1');
-
-    h1.setAttribute('class', 'zilla-slab-regular')
-})
