@@ -15,7 +15,7 @@ body {
     margin: 0;
 }
 
-li, a.thing {
+li, .thing {
     font-size: 18px;
     text-decoration: none;
     color: rgba(231, 228, 238, 90%);
@@ -60,4 +60,16 @@ li, a.thing {
 
 .column {
     float: left;
+}
+
+#side {
+    line-height: 30px;
+    width: 15vw;
+    background-color: #131212;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+.extend {
+    position: fixed;
 }
