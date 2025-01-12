@@ -1,4 +1,24 @@
 ---
 import './css/unkmod.css';
 import Icon from '@/components/Icon.astro';
+import UnkModJS from '@/other/docs/UnkModJS.astro';
+import FontDoc from '@/components/FontDoc.astro';
+import Sidebar from '@/components/Sidebar.astro';
+import HeaderGuides from '@/components/HeaderGuides.astro';
 ---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <FontDoc />
+        <Icon />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentation | Guides</title>
+    </head>
+    <body>
+        <HeaderGuides />
+        <Sidebar />
+        <UnkModJS />
+    </body>
+</html>

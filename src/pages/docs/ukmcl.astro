@@ -1,14 +1,23 @@
 ---
 import './css/ukmcl.css';
-import UKMCLJS from '@/astroJS/UKMCLJS.astro';
+import UKMCLJS from '@/other/docs/UKMCLJS.astro';
+import FontDoc from '@/components/FontDoc.astro';
 import Icon from '@/components/Icon.astro';
+import HeaderGuides from '@/components/HeaderGuides.astro';
+import Sidebar from '@/components/Sidebar.astro';
 ---
 <!doctype html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <FontDoc />
         <Icon />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Documentation | Guides</title>
     </head>
-<html>
     <body>
-        
+        <HeaderGuides />
+        <Sidebar />
+        <UKMCLJS />
     </body>
 </html>
