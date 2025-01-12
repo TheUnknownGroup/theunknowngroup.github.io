@@ -6,7 +6,6 @@ function update() {
     } else {
         side.style.visibility = "visible";
     }
-    console.log(window.innerWidth);
 }
 
 update();
