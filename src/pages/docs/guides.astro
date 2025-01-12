@@ -1,15 +1,24 @@
 ---
-import "@/guides.css";
-import GuidesJS from '@/components/GuidesJS.astro';
+import "./css/guides.css";
+import Sidebar from '@/components/Sidebar.astro';
+import FontDoc from '@/components/FontDoc.astro';
+import Icon from '@/components/Icon.astro';
+import HeaderGuides from '@/components/HeaderGuides.astro';
+import GuidesJS from '@/astroJS/GuidesJS.astro';
 ---
 
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <FontDoc />
+        <Icon />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Documentation | Guides</title>
     </head>
     <body>
+        <HeaderGuides />
+        <Sidebar />
+        <GuidesJS />
     </body>
 </html>

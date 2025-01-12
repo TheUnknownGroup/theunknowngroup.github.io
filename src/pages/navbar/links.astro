@@ -1,6 +1,8 @@
 ---
 import "@/style.css";
-import LinksJS from '@/components/LinksJS.astro';
+import LinksJS from '@/astroJS/LinksJS.astro';
+import Icon from '@/components/Icon.astro';
+import FontNav from '@/components/FontNav.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -8,10 +10,8 @@ import LinksJS from '@/components/LinksJS.astro';
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-1.0" />
-		<link rel="shortcut icon" type="image/svg+xml" href="../../favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Zilla+Slab&display=swap" rel="stylesheet">
+		<Icon />
+        <FontNav />
         <script src="https://kit.fontawesome.com/42f8b8e338.js" crossorigin="anonymous"></script>
         <LinksJS />
     </head>

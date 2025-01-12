@@ -1,0 +1,43 @@
+---
+const links = [
+    {
+        name: 'Overview', 
+        href: '../docs/guides'
+    },
+    {
+        name: 'UKMCL',
+        href: '../docs/ukmcl'
+    },
+    {
+        name: 'Unknown Mod',
+        href: '../docs/unkmod'
+    },
+    {
+        name: 'Custom Splashes',
+        href: '../docs/custom'
+    }
+];
+---
+
+<aside id="side">
+    <nav>
+        <ul class="lexend-reg">
+            {links.map((link) => (
+                <li>
+                    <a href={link.href} class="thing">{link.name}</a>
+                </li>
+            ))}
+        </ul>
+    </nav>
+</aside>
+
+<style>
+    #side {
+        padding: 0;
+        margin: 0;
+        line-height: 30px;
+        width: 15vw;
+        background-color: #131212;
+        height: 100vh;
+    }
+</style>

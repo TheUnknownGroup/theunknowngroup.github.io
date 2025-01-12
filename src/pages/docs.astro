@@ -1,35 +1,21 @@
 ---
 import "@/docs.css";
-import DocsJS from "@/components/DocsJS.astro";
+import DocsJS from "@/astroJS/DocsJS.astro";
+import Icon from '@/components/Icon.astro';
+import FontDoc from '@/components/FontDoc.astro';
+import HeaderDoc from '@/components/HeaderDoc.astro';
 ---
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/svg+xml" href="../favicon.svg" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+        <Icon />
+        <FontDoc />
         <title>Documentation</title>
     </head>
     <body>
-        <div class="header" id="h">
-            <div class="icon column">
-                <a href="https://github.com/TheUnknownGroup" target="_blank" id="github">
-                    <img src="../assets/favicon.png" alt="TheUnknownGroup's Icon" width="40" id="icon"/>
-                </a>
-            </div>
-            <div class="column home">
-                <a onclick="location.reload()" class="lexend-reg" id="home">Home</a>
-            </div>
-            <div class="column guide">
-                <a href="docs/guides" class="lexend-reg" id="guide">Guides</a>
-            </div>
-            <div class="column scroll">
-                <a class="lexend-reg" id="scroll">Doc Pages</a>
-            </div>
-        </div>
+        <HeaderDoc />
         <h1 class="lexend-reg" id="wel">Welcome to our Documentation page!</h1>
         <div id="contain1">
             <div id="inside1">

@@ -71,7 +71,7 @@ body {
     color: #e9e7ee;
 }
 
-#home:hover, #guide:hover, #scroll:hover {
+#home:hover, #guide:hover, #scroll:hover, #main:hover, #bot:hover, #gui:hover {
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
@@ -111,11 +111,6 @@ body {
 
 #main, #bot, #gui {
     cursor: pointer;
-}
-
-#main:hover, #bot:hover, #gui:hover {
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
 }
 
 #up {
