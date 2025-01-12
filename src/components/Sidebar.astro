@@ -21,7 +21,7 @@ const links = [
 
 <aside id="side">
     <nav>
-        <ul class="lexend-reg">
+        <ul class="lexend-reg extend">
             {links.map((link) => (
                 <li>
                     <a href={link.href} class="thing">{link.name}</a>
@@ -30,14 +30,3 @@ const links = [
         </ul>
     </nav>
 </aside>
-
-<style>
-    #side {
-        padding: 0;
-        margin: 0;
-        line-height: 30px;
-        width: 15vw;
-        background-color: #131212;
-        height: 100vh;
-    }
-</style>
