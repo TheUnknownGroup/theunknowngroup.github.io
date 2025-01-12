@@ -20,7 +20,7 @@ const links = [
 ---
 
 <aside id="side">
-    <nav>
+    <nav id="list">
         <ul class="lexend-reg extend">
             {links.map((link) => (
                 <li>
@@ -30,3 +30,9 @@ const links = [
         </ul>
     </nav>
 </aside>
+
+<style>
+    #list {
+        list-style: none;
+    }
+</style>
