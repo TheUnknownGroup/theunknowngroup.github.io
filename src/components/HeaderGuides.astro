@@ -8,3 +8,46 @@
         <a href="../../docs" class="lexend-reg" id="home">Home</a>
     </div>
 </div>
+
+<style>
+    .header::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .header {
+        border-bottom: 0.015vh solid #e8edfc;
+    }
+
+    #home {
+        cursor: pointer;
+        text-decoration: none;
+        transition: text-decoration 3s ease;
+        color: #e9e7ee;
+    }
+
+    #home:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .home {
+        padding-top: 1em;
+        padding-left: 1.25em;
+        font-size: 20px;
+        transform: translateY()
+    }
+
+    .icon {
+        padding: 1.5vh 0 1.25vh 1.75vh;
+    }
+
+    #icon:hover {
+        box-shadow: 1px 1px 15px #e9e7ee;
+    }
+
+    .column {
+        float: left;
+    }
+</style>

@@ -14,3 +14,46 @@
         <a class="lexend-reg" id="scroll">Doc Pages</a>
     </div>
 </div>
+
+<style>
+    .column {
+        float: left;
+    }
+
+    .icon {
+        padding: 1.5vh 0 1.25vh 1.75vh;
+    }
+
+    #icon:hover {
+        box-shadow: 1px 1px 15px #e9e7ee;
+    }
+
+    .header::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .header {
+        border-bottom: 0.015vh solid #e8edfc;
+    }
+
+    #home, #guide, #scroll {
+        cursor: pointer;
+        text-decoration: none;
+        transition: text-decoration 3s ease;
+        color: #e9e7ee;
+    }
+
+    #home:hover, #guide:hover, #scroll:hover, #main:hover, #bot:hover, #gui:hover {
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+    }
+
+    .home, .guide, .scroll {
+        padding-top: 1em;
+        padding-left: 1.25em;
+        font-size: 20px;
+        transform: translateY()
+    }
+</style>
