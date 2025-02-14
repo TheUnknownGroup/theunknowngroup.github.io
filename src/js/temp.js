@@ -31,12 +31,12 @@ if (window.addEventListener){window.addEventListener('load', WindowLoad, false);
 
     input.addEventListener('keydown', ({key}) => {
         if (key === "Enter") {
-            document.getElementById('btn').click();
+            btn.click();
         }
     });
     input2.addEventListener('keydown', ({key}) => {
         if (key === "Enter") {
-            document.getElementById('btn2').click();
+            btn2.click();
         }
     });
     input3.addEventListener('keydown', ({key}) => {
