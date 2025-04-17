@@ -1,26 +1,55 @@
 ---
-import linData from '@public/launcher/version-lin.json' assert { type: "json" };
 type launch = {
     version: string,
     changelog: string,
     download_url: string
 };
-const data2 = linData.versions ?? linData
-const version = Array.isArray(data2) ? (data2 as unknown as launch[]) : [];
+
+// Linux
+import linData from '@public/launcher/version-lin.json' assert { type: "json" };
+const data = linData.versions ?? linData
+const linVer = Array.isArray(data) ? (data as unknown as launch[]) : [];
+
+// Windows
+import winData from '@public/launcher/version-win.json' assert { type: "json" };
+const data1 = winData.versions ?? winData
+const winVer = Array.isArray(data1) ? (data1 as unknown as launch[]) : [];
+
+// Mac
+import macData from '@public/launcher/version-mac.json' assert { type: "json" };
+const data2 = macData.versions ?? macData
+const macVer = Array.isArray(data2) ? (data2 as unknown as launch[]) : [];
 ---
 
-<ul>
+<ul style="">
+    <h1>Linux</h1>
     {
-        version.map((ver) => (
+        linVer.map((ver) => (
             <li>
                 <p style="font-weight: bold; font-size: 24px;">Version {ver.version}</p>
                 <a href={ver.changelog}>UKMCL V{ver.version} Changelog</a> <br>
-                <input type="button" onclick={ver.download_url} id="val1"></input>
+                <a href={ver.download_url}>Download</a>
+            </li>
+        ))
+    }
+    <h1>Windows</h1>
+    {
+        winVer.map((ver) => (
+            <li>
+                <p style="font-weight: bold; font-size: 24px;">Version {ver.version}</p>
+                <a href={ver.changelog}>UKMCL V{ver.version} Changelog</a> <br>
+                <a href={ver.download_url}>Download</a>
+            </li>
+        ))
+    }
+    <h1>MacOS</h1>
+    {
+        macVer.map((ver) => (
+            <li>
+                <p style="font-weight: bold; font-size: 24px;">Version {ver.version}</p>
+                <a href={ver.changelog}>UKMCL V{ver.version} Changelog</a> <br>
+                <a href={ver.download_url}>Download</a>
             </li>
         ))
     }
 </ul>
-
-<script>
-    const val1 = document.getElementById("val1")?.setAttribute("value",  "UKMCL {ver.version}");
-</script>
