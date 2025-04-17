@@ -1,20 +1,26 @@
-<!-- ---
-type launch = {
-    version: string;
-    changelog: string;
-    download_url: string;
-};
-
-const response = await fetch("https://web.thegremlinx.xyz/launcher/version-lin.json");
-const versions = await response.json() as launch[];
 ---
+import linData from '@public/launcher/version-lin.json' assert { type: "json" };
+type launch = {
+    version: string,
+    changelog: string,
+    download_url: string
+};
+const data2 = linData.versions ?? linData
+const version = Array.isArray(data2) ? (data2 as unknown as launch[]) : [];
+---
+
 <ul>
-    {versions.map((version) => (
+    {
+        version.map((ver) => (
             <li>
-                <p>v{version.version}</p>
-                <p>{version.changelog}</p>
-                <a href={version.download_url}>Download</a>
+                <p style="font-weight: bold; font-size: 24px;">Version {ver.version}</p>
+                <a href={ver.changelog}>UKMCL V{ver.version} Changelog</a> <br>
+                <input type="button" onclick={ver.download_url} id="val1"></input>
             </li>
         ))
     }
-</ul> -->
+</ul>
+
+<script>
+    const val1 = document.getElementById("val1")?.setAttribute("value",  "UKMCL {ver.version}");
+</script>
