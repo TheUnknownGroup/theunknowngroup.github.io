@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+}
+
+.lexend-reg {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
