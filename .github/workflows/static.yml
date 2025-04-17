@@ -80,7 +80,7 @@ jobs:
 
       - name: copy
         run: |
-          cp ./launcher/version-lin.json ./dist/launcher/*.json
+          cp ${{ github.workspace }}/launcher/version-lin.json ./dist/launcher/*.json
 
       - name: Deploy to GitHub Pages
         id: deployment
