@@ -77,6 +77,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+
+      - name: copy
+        run: |
+          cp ${{ github.workspace }}/launcher/*.json ./dist/launcher/*.json
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
