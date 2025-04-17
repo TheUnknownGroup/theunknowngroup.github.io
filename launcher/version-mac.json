@@ -1,8 +1,0 @@
-{ 
-    "versions": [ 
-    { 
-      "version": "0.0.0-experimental+0-beta.10", 
-      "changelog": "https://github.com/TheUnknownGroup/UKMCL/releases/tag/0.0.0-experimental%2B0-beta.10", 
-      "download_url": "https://web.thegremlinx.xyz/out/UKMCL-macOS-en_US+0.0.0.dmg" } 
-    ] 
-}
