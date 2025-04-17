@@ -1,15 +1,20 @@
 ---
-const response = await fetch("https://web.thegremlinx.xyz/public/launcher/version-lin.json");
-const versions = await response.json();
----
+type launch = {
+    version: string;
+    changelog: string;
+    download_url: string;
+};
 
+const response = await fetch("https://web.thegremlinx.xyz/launcher/version-lin.json");
+const versions = await response.json() as launch[];
+---
 <ul>
-    {
-        versions.map((version: { version: unknown; changelog: unknown; }) => {
+    {versions.map((version) => (
             <li>
                 <p>v{version.version}</p>
                 <p>{version.changelog}</p>
+                <a href={version.download_url}>Download</a>
             </li>
-        })
+        ))
     }
 </ul>
