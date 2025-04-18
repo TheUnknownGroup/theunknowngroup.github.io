@@ -1,0 +1,68 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1c1b1f;
+}
+
+.lexend-reg {
+    font-family: "Lexend", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* download stuff */
+ul {
+    margin: auto; 
+    padding: 0; 
+    padding-left: 35px;
+}
+
+.linTitle, .winTitle, .macTitle {
+    color: rgba(231, 228, 238, 90%);
+    font-size: 35px;
+}
+
+.lin, .win, .mac {
+    color: rgba(231, 228, 238, 80%);
+    font-weight: bold; 
+    font-size: 22px;
+}
+
+.linDown, .winDown, .macDown {
+    border-radius: 10px;
+    border-width: 5;
+    border-color: #1c1b1f;
+    border-style: solid;
+    background-color: black;
+    padding: 5px;
+    border-spacing: 0px;
+    margin: auto;
+    color: rgba(231, 228, 238, 90%);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.linChange, .winChange, .macChange {
+    color: rgba(231, 228, 238, 90%);
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#up {
+    padding-top: 800px;
+    position: fixed;
+    z-index: 0;
+    right: 15px;
+    cursor: pointer;
+}
+
+/* Colors */
+.co {
+    border-color: #e8edfc;
+}

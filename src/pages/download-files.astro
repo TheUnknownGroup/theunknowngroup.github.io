@@ -1,0 +1,26 @@
+---
+import "@/download-files.css";
+import DownloadJS from "@/other/download/DownloadJS.astro";
+import FontDown from "@/components/download/FontDown.astro";
+import Icon from "@/components/Icon.astro";
+import DownloadC from "@/components/download/DownloadC.astro";
+import HeaderDown from "@/components/download/HeaderDown.astro";
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <FontDown />
+        <Icon />
+        <title>Downloads</title>
+    </head>
+    <body>
+        <HeaderDown />
+        <div id="up">
+            <a>
+                <img src="../upbutton.svg" height="60" width="60">
+            </a>
+        </div>
+        <DownloadC />
+        <DownloadJS />
+    </body>
+</html>

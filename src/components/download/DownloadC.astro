@@ -6,50 +6,52 @@ type launch = {
 };
 
 // Linux
-import linData from '@public/launcher/version-lin.json' assert { type: "json" };
+import linData from '@public/launcher/latest-version-lin.json' assert { type: "json" };
 const data = linData.versions ?? linData
 const linVer = Array.isArray(data) ? (data as unknown as launch[]) : [];
 
 // Windows
-import winData from '@public/launcher/version-win.json' assert { type: "json" };
+import winData from '@public/launcher/latest-version-win.json' assert { type: "json" };
 const data1 = winData.versions ?? winData
 const winVer = Array.isArray(data1) ? (data1 as unknown as launch[]) : [];
 
 // Mac
-import macData from '@public/launcher/version-mac.json' assert { type: "json" };
+import macData from '@public/launcher/latest-version-mac.json' assert { type: "json" };
 const data2 = macData.versions ?? macData
 const macVer = Array.isArray(data2) ? (data2 as unknown as launch[]) : [];
 ---
 
-<ul style="">
-    <h1>Linux</h1>
-    {
-        linVer.map((ver) => (
-            <li>
-                <p style="font-weight: bold; font-size: 24px;">Version {ver.version}</p>
-                <a href={ver.changelog}>UKMCL V{ver.version} Changelog</a> <br>
-                <a href={ver.download_url}>Download</a>
-            </li>
-        ))
-    }
-    <h1>Windows</h1>
+<ul>
+    <h1 class="winTitle lexend-reg" id="win">Windows Beta Versions</h1>
     {
         winVer.map((ver) => (
-            <li>
-                <p style="font-weight: bold; font-size: 24px;">Version {ver.version}</p>
-                <a href={ver.changelog}>UKMCL V{ver.version} Changelog</a> <br>
-                <a href={ver.download_url}>Download</a>
-            </li>
+            <p class="win lexend-reg">UKMCL Version {ver.version}</p>
+            <a href={ver.changelog} class="winChange lexend-reg">Windows Changelog for version {ver.version}</a> <br><br>
+            <a href={ver.download_url} class="winDown lexend-reg">Download</a>
         ))
     }
-    <h1>MacOS</h1>
+</ul>
+<br>
+<div style="border-radius: 0; border-style: solid; border-width: 1px;" class="co"></div>
+<ul>
+    <h1 class="linTitle lexend-reg" id="lin">Linux Beta Versions</h1>
+    {
+        linVer.map((ver) => (
+            <p class="lin lexend-reg">UKMCL Version {ver.version}</p>
+            <a href={ver.changelog} class="linChange lexend-reg">Linux Changelog for version {ver.version}</a> <br><br>
+            <a href={ver.download_url} class="linDown lexend-reg">Download</a>
+        ))
+    }
+</ul>
+<br>
+<div style="border-radius: 0; border-style: solid; border-width: 1px;" class="co"></div>
+<ul>
+    <h1 class="macTitle lexend-reg" id="mac">MacOS Beta Versions</h1>
     {
         macVer.map((ver) => (
-            <li>
-                <p style="font-weight: bold; font-size: 24px;">Version {ver.version}</p>
-                <a href={ver.changelog}>UKMCL V{ver.version} Changelog</a> <br>
-                <a href={ver.download_url}>Download</a>
-            </li>
+            <p class="mac lexend-reg">UKMCL Version {ver.version}</p>
+            <a href={ver.changelog} class="macChange lexend-reg">MacOS Changelog for version {ver.version}</a> <br><br>
+            <a href={ver.download_url} class="macDown lexend-reg">Download</a>
         ))
     }
 </ul>
