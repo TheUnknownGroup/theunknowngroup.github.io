@@ -6,18 +6,18 @@ type launch = {
 };
 
 // Linux
-import linData from '@public/launcher/latest-version-lin.json' assert { type: "json" };
-const data = linData.versions ?? linData
+import linData from '@public/apps/launcher/latest-version-lin.json' assert { type: "json" };
+const data = linData ?? linData
 const linVer = Array.isArray(data) ? (data as unknown as launch[]) : [];
 
 // Windows
-import winData from '@public/launcher/latest-version-win.json' assert { type: "json" };
-const data1 = winData.versions ?? winData
+import winData from '@public/apps/launcher/latest-version-win.json' assert { type: "json" };
+const data1 = winData ?? winData
 const winVer = Array.isArray(data1) ? (data1 as unknown as launch[]) : [];
 
 // Mac
-import macData from '@public/launcher/latest-version-mac.json' assert { type: "json" };
-const data2 = macData.versions ?? macData
+import macData from '@public/apps/launcher/latest-version-mac.json' assert { type: "json" };
+const data2 = macData ?? macData
 const macVer = Array.isArray(data2) ? (data2 as unknown as launch[]) : [];
 ---
 
