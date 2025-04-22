@@ -1,46 +1,16 @@
 ---
-const hrefs = [
-        "../../docs/guides", 
-        "../../docs/ukmcl", 
-        "../../docs/unkmod", 
-        "../../docs/custom",
-        "../../docs/elementa"
-    ]
-const names = [
-        "Overview", 
-        "UKMCL", 
-        "Unknown Mod", 
-        "Custom Splashes",
-        "Elementa"
-    ]
 ---
 
 <aside id="side">
     <nav>
-        <ul class="lexend-reg extend" id="list">
-            <li>
-                <a href={hrefs[0]} class="thing">{names[0]}</a>
-            </li>
-            <li>
-                <a href={hrefs[1]} class="thing">{names[1]}</a>
-            </li>
-            <li>
-                <a href={hrefs[2]} class="thing">{names[2]}</a>
-            </li>
-            <li>
-                <a href={hrefs[3]} class="thing">{names[3]}</a>
-            </li>            
-            <li>
-                <a href={hrefs[4]} class="thing">{names[4]}</a>
-            </li>
-        </ul>
+        <ul class="lexend-reg extend" id="list"></ul>
     </nav>
 </aside>
 
 <style>
     #list {
         list-style: none;
-        padding-top: 0;
+        padding-top: 0px;
         padding-left: 15px;
     }
 
@@ -56,3 +26,40 @@ const names = [
         position: fixed;
     }
 </style>
+
+<script>
+const o = [
+    {
+        name: "Overview",
+        href: "../../docs/guides"
+    },
+    {
+        name: "UKMCL",
+        href: "../../docs/ukmcl"
+    },
+    {
+        name: "Unknown Mod",
+        href: "../../docs/unkmod"
+    },
+    {
+        name: "Custom Splashes",
+        href: "../../docs/custom"
+    },
+    {
+        name: "Elementa",
+        href: "../../docs/elementa"
+    }
+];
+
+const con = document.getElementById("list");
+
+o.forEach(e => {
+    const a = document.createElement("a");
+    const li = document.createElement("li");
+    a.href = e.href;
+    a.textContent = e.name;
+    a.className = "thing"
+    li.appendChild(a);
+    con?.appendChild(li);
+})
+</script>
