@@ -17,9 +17,8 @@ body {
 
 /* download stuff */
 ul {
-    margin: auto; 
-    padding: 0; 
-    padding-left: 35px;
+    margin: auto;
+    padding: 0px;
 }
 
 .linTitle, .winTitle, .macTitle {
@@ -41,7 +40,6 @@ ul {
     background-color: black;
     padding: 5px;
     border-spacing: 0px;
-    margin: auto;
     color: rgba(231, 228, 238, 90%);
     text-decoration: none;
     font-size: 18px;
@@ -54,8 +52,23 @@ ul {
     text-decoration: none;
 }
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    position: relative;
+}
+
+.row {
+    padding-left: 50px;
+}
+
+.col {
+    float: left;
+}
+
 #up {
-    padding-top: 800px;
+    padding-top: 780px;
     position: fixed;
     z-index: 0;
     right: 15px;
@@ -65,4 +78,5 @@ ul {
 /* Colors */
 .co {
     border-color: #e8edfc;
+    margin-top: 50px;
 }

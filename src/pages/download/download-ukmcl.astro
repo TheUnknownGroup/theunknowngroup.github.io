@@ -1,0 +1,27 @@
+---
+import "./css/download-ukmcl.css";
+import DownloadUKMCLJS from "@/other/download/DownloadUKMCLJS.astro";
+import FontDown from "@/components/download/FontDown.astro";
+import Icon from "@/components/Icon.astro";
+import DownloadUKMCLC from "@/components/download/DownloadUKMCLC.astro";
+import HeaderDown from "@/components/download/HeaderDown.astro";
+---
+<!doctype html>
+<html lang="en">
+    <head>
+        <FontDown />
+        <Icon />
+        <Meta />
+        <title>Download UKMCL</title>
+    </head>
+    <body>
+        <HeaderDown />
+        <div id="up">
+            <a>
+                <img src="../upbutton.svg" height="60" width="60">
+            </a>
+        </div>
+        <DownloadUKMCLC />
+        <DownloadUKMCLJS />
+    </body>
+</html>
