@@ -1,0 +1,52 @@
+name: dioxus-website
+
+on:
+    push:
+        branches:
+          - main
+    workflow_dispatch:
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v7
+              
+            - name: Install Rust
+              uses: dtolnay/rust-toolchain@stable
+              with:
+                  target: wasm32-unknown-unknown
+
+            - uses: Swatinem/rust-cache@v2
+              
+            - name: Install Dioxus CLI
+              run: cargo install dioxus-cli --version 0.7.7 --locked
+
+            - name: Build Dioxus website
+              run: dx bundle --web --release --out-dir docs
+
+            - run: |
+                mkdir -p site
+                cp -a docs/public/. site/
+                cp site/index.html site/404.html
+
+            - uses: action/upload-pages-artifact@v5
+              with:
+                  path: site
+    deploy:
+        runs-on: ubuntu-latest
+        
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+            
+        needs: build
+        steps: 
+            - name: Deploy
+              id: deployment  
+              uses: actions/deploy-pages@v5
