@@ -18,11 +18,11 @@ fn RailLink(to: Route, label: &'static str) -> Element {
 pub fn NavBar() -> Element {
     rsx! {
         div {
-            class: "border-b-solid border-b-black border-b-[2px] pl-[10px] pb-[3px] grid grid-cols-[auto_1fr_auto] items-center",
+            class: "border-b-solid border-b-black border-b-[2px] pl-[10px] pb-[3px] grid grid-cols-[auto_1fr_auto] items-center bg-blue-background",
             img {
                 src: asset!("/assets/favicon.png"),
                 width: 40,
-                class: "rounded-sm hover:shadow-[0_0_5px] shadow-white transition-shadow ease-in-out duration-300 mt-[3px]",
+                class: "rounded-sm hover:shadow-[0_0_5px] shadow-white transition-shadow ease-in-out duration-300 mt-[3px] cursor-pointer",
             }
             Link {
                 to: Route::Home {},

@@ -2,3 +2,11 @@
 body {
     background-color: "";
 }
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+
+.zilla {
+    font-family: "Zilla Slab", serif;
+}

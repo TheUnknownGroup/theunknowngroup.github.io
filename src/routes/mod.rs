@@ -2,11 +2,13 @@ pub mod main_page;
 pub mod links;
 pub mod news;
 pub mod temp_converter;
+pub mod docs;
 use dioxus::prelude::*;
 use main_page::Home;
 use links::Links;
 use news::News;
 use temp_converter::TempConv;
+use docs::Docs;
 
 use crate::app::Shell;
 
@@ -22,4 +24,6 @@ pub enum Route {
         News {},
         #[route("/temp_convert")]
         TempConv {},
+        #[route("/docs")]
+        Docs {},
 }

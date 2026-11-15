@@ -3,7 +3,7 @@
 [web.app]
 
 # HTML title tag content
-title = "website"
+title = "The Unknown Group"
 base_path = ""
 
 # include `assets` in web platform

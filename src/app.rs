@@ -1,16 +1,12 @@
 use dioxus::prelude::*;
 
-use crate::{components::navbar::NavBar, routes::Route};
+use crate::{routes::Route};
 
 #[component]
 pub fn Shell() -> Element {
-    rsx! {
-        div {  
-            class: "bg-blue-background h-screen", 
-            main {
-                NavBar {},
-                Outlet::<Route> {}
-            }
+    rsx! { 
+        main {
+            Outlet::<Route> {}
         }
     }
 }
