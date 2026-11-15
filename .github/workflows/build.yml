@@ -35,7 +35,7 @@ jobs:
                 cp -a docs/public/. site/
                 cp site/index.html site/404.html
 
-            - uses: action/upload-pages-artifact@v5
+            - uses: actions/upload-pages-artifact@v5
               with:
                   path: site
     deploy:
