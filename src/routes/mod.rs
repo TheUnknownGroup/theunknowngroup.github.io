@@ -3,12 +3,9 @@ pub mod links;
 pub mod news;
 pub mod temp_converter;
 pub mod docs;
+pub mod routes;
 use dioxus::prelude::*;
-use main_page::Home;
-use links::Links;
-use news::News;
-use temp_converter::TempConv;
-use docs::Docs;
+use routes::*;
 
 use crate::app::Shell;
 
